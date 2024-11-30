@@ -1,0 +1,87 @@
+/* Dark Mode CSS */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #333333;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.pomodoroMainOptions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #888888;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #444444;
+  width: 250px;
+  text-align: center;
+}
+
+/* Heading styling */
+.pomodoroMainOptions h1 {
+  font-size: 1.5rem;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #555555; /* Dark grey background */
+  color: #ffffff; /* White text */
+  border: 1px solid #888888; /* Light grey border for subtle definition */
+  border-radius: 5px; /* Rounded corners */
+  margin: 5px 0;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust font size as needed */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+  background-color: #666666; /* Slightly lighter grey on hover */
+}
+
+/* Styling for buttons as tabs */
+button.short-break,
+button.long-break {
+  position: absolute;
+  top: -15px; /* Position above the pomodoroMainOptions box */
+  background-color: #555555;
+  color: #ffffff;
+  border: 1px solid #888888;
+  border-radius: 5px 5px 0 0; /* Rounded top corners */
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific positioning for each button */
+button.short-break {
+  left: 10px; /* Adjust to place on the left side */
+}
+
+button.long-break {
+  right: 10px; /* Adjust to place on the right side */
+}
+
+button.short-break:hover,
+button.long-break:hover {
+  background-color: #666666;
+}
